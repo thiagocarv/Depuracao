@@ -8,8 +8,10 @@ namespace Depuracao
     class Program
 
     {
-        static int Mudar(int n)
-        {
+ 
+static int Mudar(int n)
+        
+ {
             n = n + 1;
             return n;
         }
@@ -22,6 +24,7 @@ namespace Depuracao
         
         static void Main(string[] args)
         {
+#region codigo
             int numero = 0;
             numero = int.Parse(Console.ReadLine());
             Console.WriteLine("O numero escolhido e: {0}", numero);
@@ -39,10 +42,10 @@ namespace Depuracao
             vetor[0] = int.Parse(Console.ReadLine());
             vetor[1] = int.Parse(Console.ReadLine());
             vetor[2] = int.Parse(Console.ReadLine());
-            for (int c = 0; c <= vetor.Length; c++)
-                Console.Write("(0) ", vetor[c]);
+            for (int c = 0; c < vetor.Length; c++)
+#endregion  Console.Write("(0) ", vetor[c]);
 
-            Console.Read();
+                Console.Read();
         }
     }
 }
